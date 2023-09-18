@@ -29,8 +29,7 @@ router.route("/:userID/single-account").get(viewAccount);
 router.route("/:userID/delete").delete(deleteAccount);
 
 router
-  .route("/create-account")
-  .post(validatorHolder(createAccountValidator), registerAccount);
+  .route("/create-account").post(validatorHolder(createAccountValidator), registerAccount);
 
 router.route("/sign-in-account").post(signInAccount);
 
